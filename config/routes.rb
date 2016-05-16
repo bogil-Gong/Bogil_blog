@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'agenda', to: 'welcome#agenda'
   get 'location', to: 'welcome#location'
   
+  resources :articles
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
