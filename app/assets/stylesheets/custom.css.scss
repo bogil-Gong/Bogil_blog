@@ -26,6 +26,7 @@ $navbar-default-bg: black;
     background-size: cover;
     margin-top: 40px;
     height: 500px;
+    opacity : 0.9;
 }
 
 .jumbotron h1 {
@@ -38,6 +39,11 @@ $navbar-default-bg: black;
 
 .btn-xlarge {
     font-size: 1.7em;
+}
+
+.article-meta-details {
+    border-top: 1px solid #eaeaea;
+    /* margin-top: 15px;*/
 }
 
 .article-actions {
