@@ -13,8 +13,12 @@ Rails.application.routes.draw do
   get 'speaker', to: 'welcome#speaker'
   get 'agenda', to: 'welcome#agenda'
   get 'location', to: 'welcome#location'
-  
   resources :articles
+  
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
+  
+  
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
