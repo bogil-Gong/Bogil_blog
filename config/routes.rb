@@ -1,18 +1,14 @@
 Rails.application.routes.draw do
 
 
-  root 'welcome#home'
+  root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  get 'home', to: 'welcome#home'
-  get 'about', to: 'welcome#about'
-  get 'speaker', to: 'welcome#speaker'
-  get 'agenda', to: 'welcome#agenda'
-  get 'location', to: 'welcome#location'
+  get 'about', to: 'pages#about'
   resources :articles
   
   get 'signup', to: 'users#new'
